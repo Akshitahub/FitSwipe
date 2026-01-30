@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FitSwipe — Discover Your Aesthetic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= LOGIN ================= -->
+<section id="loginPage" class="page active">
+  <div class="login-box">
+    <h1>FitSwipe ✨</h1>
+    <p class="subtitle">Swipe styles. Build a vibe.</p>
+
+    <input id="usernameInput" type="text" placeholder="Your name" />
+    <button id="loginBtn">Enter My Aesthetic</button>
+
+    <p class="hint">No ads. No pressure. Just vibes.</p>
+  </div>
+</section>
+
+<!-- ================= APP ================= -->
+<section id="app" class="page">
+
+  <!-- HEADER -->
+  <header class="top-bar">
+    <h2 id="greeting"></h2>
+  </header>
+
+  <!-- TABS -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="swipe">Swipe</button>
+    <button class="tab-btn" data-tab="closet">Closet</button>
+    <button class="tab-btn" data-tab="avatar">Avatar</button>
+    <button class="tab-btn" data-tab="vibe">Vibe</button>
+    <button class="tab-btn" data-tab="profile">Profile</button>
+  </nav>
+
+  <!-- ================= SWIPE ================= -->
+  <section id="swipe" class="tab" style="display:block">
+    <div class="swipe-card">
+      <div class="image-wrap">
+        <img id="itemImg" alt="Product image" />
+      </div>
+      <div class="card-content">
+        <h3 id="itemName"></h3>
+        <p id="itemVibe" class="vibe-line"></p>
+
+        <button class="buy-btn">Explore Options</button>
+
+        <div class="actions">
+          <button id="passBtn">Skip</button>
+          <button id="likeBtn">Like</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLOSET ================= -->
+  <section id="closet" class="tab">
+    <h3>Your Aesthetic Closet</h3>
+    <p class="hint">Things you connected with</p>
+    <div id="boardGrid" class="closet-grid"></div>
+  </section>
+
+  <!-- ================= AVATAR/CELEB ================= -->
+  <section id="avatar" class="tab">
+    <h3>Your Celebrity Style Match</h3>
+    <p class="hint">Swipe to like items to unlock your celeb vibe</p>
+    <div class="avatar-celeb">
+      <img id="celebImg" alt="Celebrity" />
+      <h4 id="celebName"></h4>
+    </div>
+  </section>
+
+  <!-- ================= VIBE ================= -->
+  <section id="vibe" class="tab">
+    <h3>Your Dominant Vibe</h3>
+    <p id="vibeText">Like a few items to unlock your aesthetic.</p>
+  </section>
+
+  <!-- ================= PROFILE ================= -->
+  <section id="profile" class="tab">
+    <p><strong>Name:</strong> <span id="profileName"></span></p>
+    <p><strong>Total Likes:</strong> <span id="likesCount">0</span></p>
+    <button id="logoutBtn" class="danger-btn">Logout</button>
+  </section>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

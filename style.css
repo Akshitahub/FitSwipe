@@ -1,0 +1,53 @@
+/* ========== RESET & BASE ========== */
+* { box-sizing: border-box; font-family: "Inter","Segoe UI",sans-serif; }
+body { margin:0; min-height:100vh; background:radial-gradient(circle at top,#ffe6f0,#fdfbfb); display:flex; justify-content:center; align-items:center; color:#222; }
+
+/* ========== PAGES ================= */
+.page { display:none; width:100%; max-width:430px; min-height:100vh; padding:20px; }
+.page.active { display:block; }
+
+/* ========== LOGIN ================= */
+.login-box { margin-top:20vh; text-align:center; padding:40px 30px; background:rgba(255,255,255,0.55); backdrop-filter:blur(16px); border-radius:28px; box-shadow:0 25px 60px rgba(0,0,0,0.15); }
+.login-box h1 { font-size:2.4rem; margin-bottom:8px; }
+.subtitle { opacity:0.8; margin-bottom:20px; }
+input { width:100%; padding:14px; border-radius:18px; border:none; outline:none; font-size:16px; margin-bottom:12px; background:rgba(255,255,255,0.9);}
+button { width:100%; padding:14px; border-radius:18px; border:none; cursor:pointer; font-size:16px; font-weight:600; }
+#loginBtn { background:linear-gradient(135deg,#ff5c8a,#ff8fab); color:white; }
+.hint { font-size:13px; opacity:0.6; margin-top:10px; }
+
+/* ========== TOP BAR ================= */
+.top-bar { text-align:center; margin-bottom:10px; }
+.top-bar h2 { font-weight:600; }
+
+/* ========== TABS ================= */
+.tabs { display:flex; justify-content:space-between; margin-bottom:10px; }
+.tab-btn { flex:1; margin:4px; background:transparent; color:#444; border-bottom:3px solid transparent; }
+.tab-btn.active { border-color:#ff5c8a; color:#ff5c8a; }
+
+/* ========== SWIPE CARD ================= */
+.swipe-card { background:rgba(255,255,255,0.7); backdrop-filter:blur(20px); border-radius:30px; padding:16px; box-shadow:0 30px 70px rgba(0,0,0,0.18); transition:transform 0.4s ease; }
+.swipe-card:hover { transform:translateY(-6px); }
+.image-wrap { border-radius:24px; overflow:hidden; }
+.image-wrap img { width:100%; height:280px; object-fit:cover; border-radius:24px; }
+.card-content { padding:12px 6px; }
+.card-content h3 { margin:8px 0 4px; }
+.vibe-line { font-size:14px; opacity:0.75; }
+.actions { display:flex; justify-content:space-between; margin-top:14px; }
+.actions button { width:48%; background:rgba(255,255,255,0.8); }
+.buy-btn { margin-top:12px; background:linear-gradient(135deg,#ff5c8a,#ff8fab); color:white; }
+
+/* ========== CLOSET ================= */
+.closet-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:16px; }
+.closet-grid img { width:100%; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.18); }
+
+/* ========== AVATAR/CELEB ================= */
+.avatar-celeb { text-align:center; margin-top:30px; }
+.avatar-celeb img { width:180px; height:220px; object-fit:cover; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.2); }
+.avatar-celeb h4 { margin-top:12px; font-size:18px; }
+
+/* ========== VIBE ================= */
+#vibe { background:rgba(255,255,255,0.7); border-radius:26px; padding:24px; box-shadow:0 20px 50px rgba(0,0,0,0.18); text-align:center; }
+
+/* ========== PROFILE ================= */
+#profile p { margin:12px 0; }
+.danger-btn { background:#111; color:white; margin-top:20px; }
